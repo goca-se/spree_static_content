@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreeStaticContent.version
   s.summary     = 'Extention to manage the static pages for your Spree shop.'
   s.description = s.summary
-  s.required_ruby_version = '>= 2.1.0'
+  s.required_ruby_version = '>= 2.1.0', '< 2.4.0'
 
   s.authors      = ['Peter Berkenbosch', 'Roman Smirnov']
   s.email        = 'peter@pero-ict.nl'
@@ -22,19 +22,19 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.1.0.beta'
+  s.add_dependency 'goca-spree-core', '3.1.14.rails.5.0'
 
-  s.add_development_dependency 'capybara', '~> 2.5'
-  s.add_development_dependency 'factory_girl', '~> 4.4'
-  s.add_development_dependency 'ffaker', '>= 1.25.0'
-  s.add_development_dependency 'database_cleaner', '~> 1.4'
-  s.add_development_dependency 'rspec-rails', '~> 3.4.0'
-  s.add_development_dependency 'sqlite3', '~> 1.3.10'
-  s.add_development_dependency 'poltergeist', '~> 1.6'
-  s.add_development_dependency 'simplecov', '~> 0.10.0'
-  s.add_development_dependency 'coffee-rails', '~> 4.0.0'
+  s.add_development_dependency 'capybara', '~> 2.15.0'
+  s.add_development_dependency 'factory_girl', '~> 4.8.0'
+  s.add_development_dependency 'ffaker', '~> 2.2.0'
+  s.add_development_dependency 'database_cleaner', '~> 1.5.3'
+  s.add_development_dependency 'rspec-rails', '~> 3.5.2'
+  s.add_development_dependency 'sqlite3', '~> 1.3.13'
+  s.add_development_dependency 'poltergeist', '~> 1.15.0'
+  s.add_development_dependency 'simplecov', '~> 0.12.0'
+  s.add_development_dependency 'coffee-rails', '~> 4.1.1'
   s.add_development_dependency 'sass-rails', '~> 5.0.0'
-  s.add_development_dependency 'guard-rspec', '>= 4.2.0'
-  s.add_development_dependency 'pry-rails', '>= 0.3.0'
-  s.add_development_dependency 'rubocop', '>= 0.24.1'
+  s.add_development_dependency 'guard-rspec', '~> 4.2.0'
+  s.add_development_dependency 'pry-rails', '0.3.4'
+  s.add_development_dependency 'rubocop', '0.41.2'
 end
