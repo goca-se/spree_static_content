@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'goca-spree-core', '3.1.14.rails.5.2.8.1'
+  s.add_dependency 'goca-spree-core', '3.1.14.rails.5.2.8.2'
 
   s.add_development_dependency 'capybara', '~> 2.15.0'
   s.add_development_dependency 'factory_girl', '~> 4.8.0'
